@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="shortcut icon" href="#" type="image/x-icon" />
-      <script
-        src="https://unpkg.com/htmx.org@1.9.10"
-        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-        crossorigin="anonymous"
-      ></script>
-    <link rel="stylesheet" href="css/index.css">
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-   
     <header class="header">
       <nav
         data-hx-trigger="load"
@@ -21,9 +20,8 @@
         data-hx-get="partial/global.header.partial.html"
       ></nav>
     </header>
-    
+
     <main class="main">
-      
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -42,13 +40,30 @@
         data-hx-get="partial/global.main-features.partial.html"
       ></section>
 
-<section
+      <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="partial/global.main-features.pricing.html"
+        data-hx-get="partial/global.main-pricing.partial.html"
       ></section>
 
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partial/global.main-faq.partial.html"
+      ></section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partial/global.footer-hero.partial.html"
+      ></section>
+
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partial/global.footer-main.partial.html"
+      ></section>
+    </footer>
   </body>
 </html>
