@@ -1,8 +1,38 @@
 @import "dop/header.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-*{
+
+
+
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #000000; */
+}
+
+body {
+  background: var(--color-bg-main);
+  color: var(--color-text-main);
+  font-family: var(--font-main);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+:root {
+  --color-bg-main: #000;
+  --color-text-main: #fff;
+  --color-accent: #ffe600;
+
+  --font-main: "Inter", system-ui, sans-serif;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
 }
